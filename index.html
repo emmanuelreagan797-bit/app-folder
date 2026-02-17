@@ -1,0 +1,71 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campus Market</h1>
+</header>
+
+<div class="categories">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('snacks')">Snacks / Chops</button>
+    <button onclick="filter('gadgets')">Gadgets</button>
+    <button onclick="filter('others')">Others</button>
+</div>
+
+<div class="products" id="products">
+
+    <div class="card snacks">
+        <img src="download (2).jpg" alt="Meat Pie">
+        <h3>Meat Pie</h3>
+        <p>₦500</p>
+        <label>Quantity:</label>
+        <input type="number" class="qty" min="1" value="1">
+        <button onclick="order('Meat Pie','500','https:www.seriouseats.com/thmb/qwPWZvL1Le5a2fQCpPXGXJ-EqXQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20220809-NigerianMeatpies-MaureenCelestine-Hero-c202154e35df41c08d8f1de79e790dd7.JPG', this)">
+            Order
+        </button>
+    </div>
+
+    <div class="card snacks">
+        <img src="images.jpg" alt="Puff Puff">
+        <h3>Puff Puff</h3>
+        <p>₦300</p>
+        <label>Quantity:</label>
+        <input type="number" class="qty" min="1" value="1">
+        <button onclick="order('Puff Puff','300','images/puffpuff.jpg', this)">
+            Order
+        </button>
+    </div>
+
+    <div class="card gadgets">
+        <img src="images/charger.jpg" alt="Phone Charger">
+        <h3>Phone Charger</h3>
+        <p>₦2000</p>
+        <label>Quantity:</label>
+        <input type="number" class="qty" min="1" value="1">
+        <button onclick="order('Phone Charger','2000','images/charger.jpg', this)">
+            Order
+        </button>
+    </div>
+
+    <div class="card gadgets">
+        <img src="images (3).jpg" alt="Airpods">
+        <h3>Airpods</h3>
+        <p>₦9000</p>
+        <label>Quantity:</label>
+        <input type="number" class="qty" min="1" value="1">
+        <button onclick="order('Airpods','9000','images/airpods.jpg', this)">
+            Order
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
